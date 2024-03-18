@@ -24,5 +24,6 @@ Once the application is running, access the APIs through the defined endpoints.
 
 Contributions are welcome! If you'd like to enhance the application or fix any issues, feel free to fork the repository and submit pull requests.
 
-License
+# License
+
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the terms of the license.
