@@ -22,6 +22,9 @@ Once the application is running, access the APIs through the defined endpoints.
 
 # Build
 
+Build the app for Mac:
+`go build -o go_chi`
+
 Build the app for Linux:
 `GOOS=linux GOARCH=amd64 go build -o go_chi`
 
@@ -33,10 +36,13 @@ Run the app on server:
 Check Post request
 
 Check the GET request using the following curl command
-Show all http headers `-v`
+
+Show all http headers with `-v`
+
 `curl http://localhost:{PORT}/hello -v`
 
 Check the POST request with the following curl command
+
 `curl -X POST http://localhost:{PORT} -v`
 
 # Contribution

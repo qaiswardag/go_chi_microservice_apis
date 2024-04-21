@@ -14,7 +14,7 @@ func main() {
 
 	router.Get("/hello", basicHandler)
 	server := &http.Server{
-		Addr: ":80",
+		Addr: ":2020",
 		// handler function runs when the server receives a request
 		Handler: router,
 		// Handler: http.HandlerFunc(basicHandler),
