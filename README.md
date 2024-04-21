@@ -20,6 +20,27 @@ Built using Go programming language and the lightweight Chi framework, ensuring 
 
 Once the application is running, access the APIs through the defined endpoints.
 
+# Build
+
+Build the app for Mac:
+`go build -o go_chi`
+
+Build the app for Linux:
+`GOOS=linux GOARCH=amd64 go build -o go_chi`
+
+Run the app on server:
+`./go_chi`
+
+# Curl
+
+Check GET request with headers `-v`
+
+`curl http://localhost:{PORT} -v`
+
+Check POST request
+
+`curl -X POST http://localhost:{PORT} -v`
+
 # Contribution
 
 Contributions are welcome! If you'd like to enhance the application or fix any issues, feel free to fork the repository and submit pull requests.
