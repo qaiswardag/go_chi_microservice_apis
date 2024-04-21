@@ -33,8 +33,7 @@ func main() {
 	}
 }
 
-// handle all requests
-// Respond to HTTP requests with for example a message
+// Respond to HTTP requests
 func basicHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Welcome to the home page!"))
 }
