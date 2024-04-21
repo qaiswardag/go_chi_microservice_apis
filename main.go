@@ -17,7 +17,6 @@ func main() {
 		Addr: ":2020",
 		// handler function runs when the server receives a request
 		Handler: router,
-		// Handler: http.HandlerFunc(basicHandler),
 	}
 
 	err := server.ListenAndServe()
