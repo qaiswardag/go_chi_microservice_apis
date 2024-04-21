@@ -19,6 +19,7 @@ func main() {
 	}
 }
 
+// handle all requests
 func basicHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Hello, World!"))
 }
