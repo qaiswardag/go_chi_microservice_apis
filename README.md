@@ -33,15 +33,11 @@ Run the app on server:
 
 # Curl
 
-Check Post request
-
-Check the GET request using the following curl command
-
-Show all http headers with `-v`
+Check GET request with headers `-v`
 
 `curl http://localhost:{PORT}/hello -v`
 
-Check the POST request with the following curl command
+Check POST request
 
 `curl -X POST http://localhost:{PORT} -v`
 
