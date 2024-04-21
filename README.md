@@ -35,7 +35,7 @@ Run the app on server:
 
 Check GET request with headers `-v`
 
-`curl http://localhost:{PORT}/hello -v`
+`curl http://localhost:{PORT} -v`
 
 Check POST request
 
