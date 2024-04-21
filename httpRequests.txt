@@ -1,0 +1,17 @@
+// -v show all http headers
+curl -X POST http://localhost:2020/hello -v
+
+Output example:
+Trying [::1]:2020...
+* Connected to localhost (::1) port 2020
+> POST /hello HTTP/1.1
+> Host: localhost:2020
+> User-Agent: curl/8.4.0
+> Accept: */*
+> 
+< HTTP/1.1 405 Method Not Allowed
+< Allow: GET
+< Date: Sun, 21 Apr 2024 07:38:36 GMT
+< Content-Length: 0
+< 
+* Connection #0 to host localhost left intact
