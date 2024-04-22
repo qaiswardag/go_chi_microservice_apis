@@ -1,39 +1,18 @@
 package main
 
 import (
+	"context"
 	"fmt"
-	"net/http"
 
-	"github.com/go-chi/chi/v5"
-	"github.com/go-chi/chi/v5/middleware"
+	"github.com/qaiswardag/go_chi_microservice_apis/application"
 )
 
 func main() {
-	// Create a new router using chi package
-	router := chi.NewRouter()
+	app := application.New()
 
-	// Use the Logger middleware for logging requests
-	router.Use(middleware.Logger)
+	err := app.Start(context.TODO())
 
-	// Define a route and handle the route with a function
-	router.Get("/", basicHandler)
-
-	// Create an HTTP server with the specified address and router as the handler
-	server := &http.Server{
-		Addr:    ":8080",
-		Handler: router,
-	}
-
-	// Start the server and listen for incoming requests
-	err := server.ListenAndServe()
-
-	// Print an error message if the server fails to start
 	if err != nil {
-		fmt.Println("Server failed to start: ", err)
+		fmt.Println("failed to start the app: ", err)
 	}
-}
-
-// Respond to HTTP requests
-func basicHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Welcome to the home page!"))
 }
