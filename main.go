@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/qaiswardag/go_chi_microservice_apis/application"
+	application "github.com/qaiswardag/go_chi_microservice_apis/app"
 )
 
 func main() {
